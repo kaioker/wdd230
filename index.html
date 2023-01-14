@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/normalize.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +12,28 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link href="https://fonts.googleapis.com/css2?family=Galindo&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <meta property="og:title" content="WDD 230 - Portal - Blake (kaioker)">
+    <meta property="og:description" content="Blake's WDD 230 course assignment portal for BYUI">
+    <meta property="og:image" content="https://byui.projectpine.com/wdd230/images/dragons.jpg">
+    <meta property="og:url" content="https://byui.projectpine.com/wdd230/">
+    <meta property="og:type" content="website">
 </head>
 <body>
-    <nav class="navigation">
-        <a href="https://byui.edu">BYU-Idaho</a>
-        <a href="https://ca.linkedin.com/">LinkedIn</a>
-        <a href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="1.2rem" height="1.2rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:top;">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <line x1="4" y1="6" x2="20" y2="6" />
-                <line x1="4" y1="12" x2="20" y2="12" />
-                <line x1="4" y1="18" x2="20" y2="18" />
-              </svg>
-        </a>
+    <nav>
+        <ul class="navigation" id="mainnav">
+            <li><a href="https://byui.edu">BYU-Idaho</a></li>
+            <li><a href="https://ca.linkedin.com/">LinkedIn</a></li>
+            <li id="menubutton">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="1.2rem" height="1.2rem" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:top;">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
     </nav>
     <div class="pagegrid">
         <header class="header">
@@ -68,5 +78,6 @@
         <p id="modified" class="highlight">---</p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
