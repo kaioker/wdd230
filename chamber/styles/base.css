@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    background: linear-gradient(to left, #00394d, #002633),#003344;
+    min-width: 350px;
+    margin-bottom: 50px;
+}
+hr{
+    border-top: 1px solid #ccc;
+    width: 100%;
+    display:none;
+    margin-bottom:0;
+}
+a {
+    text-decoration: none;
+    color: #F1520E;
+}
+a:hover{
+    color: #ee6e37;
+}
+div.viewport {
+    background-color: #fff;
+    width: 90%;
+    min-height: 75%;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border-top: 3px solid #F1520E;
+    position: relative;
+    padding-top: 20px;
+}
+header{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    vertical-align: middle;
+}
+img.logo{
+    max-width:90%;
+}
+nav{
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    align-items: center;
+    z-index: 1;
+    vertical-align: middle;
+}
+nav .hamburger{
+    display:inline-grid;
+    place-items: center;
+}
+nav .hamburger img{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.menuItem{
+    display: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+}
+.menuItem:hover{
+    border-bottom: 3px solid #F1520E;
+}
+.responsive ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+    padding: 10px;
+    border-bottom: 3px solid #F1520E;
+}
+.responsive .menuItem{
+    display: block;
+    padding:5px;
+}
+.button{
+    background-color: #F1520E;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.button a{
+    color: #fff;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #ee6e37;
+}
+main .banner{
+    width: 100%;
+    background: url("../images/hero.png") no-repeat center center;
+    background-size: cover;
+    aspect-ratio: 16/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+}
+main .cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position:relative;
+    padding:10px;
+    align-items: center;
+}
+main .cards .card{
+    width: 90%;
+    max-width: 400px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow:hidden;
+}
+main .cards .card img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+    border-bottom:1px solid #ccc;
+}
+main .cards .card .cardContent{
+    padding: 10px;
+}
+main .cards .card h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+main .cards .card p{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
+}
+main .cards h2{
+    flex: 0 0 100%;
+    text-align: center;
+}
+main .textContent{
+    width: 100%;
+    padding: 0 50px;
+}
+footer{
+    width: 100%;
+    background-color: #00465f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+footer h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
+}
+footer p{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
+}
+footer .ftop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer .ftop .ftopLeft{
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    border-bottom: 1px solid #F1520E;
+    padding:10px;
+}
+footer .ftop .ftopRight{
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    border-bottom: 1px solid #F1520E;
+    padding:10px;
+}
+footer .ftop .ftopRight p{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
+}
+footer .fbottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer .fbottom span:not(:first-child){
+    border-left: 1px solid #fff;
+}
+footer .fbottom span{
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 0;
+    padding:0 5px;
+
+}
