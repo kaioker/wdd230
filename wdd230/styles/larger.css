@@ -1,0 +1,14 @@
+@media screen and (min-width: 800px){
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    #menubutton{
+        display:none;
+    }
+    .navigation li:not(#menubutton){
+        display:inline-block !important;
+    }
+}
