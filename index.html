@@ -39,10 +39,15 @@
     </nav>
     <div class="pagegrid">
         <header class="header">
-            <img src="images/dragons.jpg" alt="me">
+            <img src="images/dragons.jpg" alt="me" lazyload="true">
             <h1>Blake (kaioker)</h1>
         </header>
         <main class="main" id="main">
+            <picture>
+                <img ssrcset="images/temple-b.webp 400w, images/temple-a.webp 960w" src="images/temple-a.webp" alt="temple" lazyload="true">
+                <div class="label"><p>Sweden Temple</p></div>
+            </picture>
+            <span class="disclaimer">The 'srcset' attribute does not work on Apple 5k retina displays. I ony have Apple 5k retina displays. I do not know if this works.</span>
             <h2>WDD 230: Course Activity Portal</h2>
             <hr><br>
             <div class="cards">
@@ -52,7 +57,7 @@
                         <ul>
                             <li>Week 01: <a href="week01/holygrail.html">Grail</a> | <a href="week01/media-query.html">Media Query</a></li>
                             <li>Week 02: <a href="week01/bom.html">Grail</a> | <a href="week01/design.html">Media Query</a></li>
-                            <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">lazy load</a> | <a href="javascript:msg()">github</a> | <a href="https://byui.projectpine.com/wdd230/week03/bom.html">bom2</a></li>
+                            <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">lazy load</a> | <a href="javascript:msg()">codepen</a> | <a href="https://byui.projectpine.com/wdd230/week03/bom.html">bom2</a></li>
                             <li>Week 04: </li>
                             <li>Week 05: </li>
                             <li>Week 06: </li>
@@ -69,10 +74,11 @@
                     <h3>Information</h3>
                     <div class="boxcontent">
                         <p id="weather">--</p>
-                        <p id="viewers">--</p>
+                        <p id="views">--</p>
                     </div>
                 </section>
             </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d192379.72557060086!2d-4.461864289757358!3d54.23688497519336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1674196651459!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </main>
     </div>
     <footer class="footer">
@@ -85,7 +91,7 @@
     <script>
 function msg(){
     // popup is something i wrote, not part of the course
-    popup("This is completely untested. The 'srcset' attribute does not work on Apple 5k retina displays<br><br>All the computers in this house have 5k Apple retina displays.", function(){window.location.href = "https://codepen.io/kaioker/pen/qByVjwP";});
+    popup("This is completely untested. The 'srcset' attribute does not work on Apple 5k retina displays<br><br>All the computers in this house have Apple 5k retina displays.", function(){window.location.href = "https://codepen.io/kaioker/pen/qByVjwP";});
 }
     </script>
 </body>

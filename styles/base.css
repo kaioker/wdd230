@@ -120,7 +120,7 @@ nav{
     grid-row: span 2;
 }
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width:100%;
     background:rgb(22,61,90);
@@ -170,6 +170,46 @@ ul{
 }
 .main.darkmode .card .boxcontent a{
     color:rgb(255, 198, 41);
+}
+
+.main picture{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.main picture img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.main picture .label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 0 0 5px 0;
+}
+
+.disclaimer{
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color:#404040;
+}
+iframe{
+    margin: 1rem auto;
+    border-radius: 5px;
+    display: block;
 }
 
 body.darkmode{ /* screw firefox for not supporting :has() */
