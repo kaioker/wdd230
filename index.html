@@ -17,6 +17,7 @@
     <meta property="og:image" content="https://byui.projectpine.com/wdd230/images/dragons.jpg">
     <meta property="og:url" content="https://byui.projectpine.com/wdd230/">
     <meta property="og:type" content="website">
+    <script src="https://cdn.projectpine.com/js/popup.js"></script>
 </head>
 <body>
     <nav>
@@ -51,7 +52,7 @@
                         <ul>
                             <li>Week 01: <a href="week01/holygrail.html">Grail</a> | <a href="week01/media-query.html">Media Query</a></li>
                             <li>Week 02: <a href="week01/bom.html">Grail</a> | <a href="week01/design.html">Media Query</a></li>
-                            <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">lazy load</a> | <a href="https://codepen.io/kaioker/pen/qByVjwP">doesnt work on apple</a></li>
+                            <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">lazy load</a> | <a href="javascript:msg()">github</a> | <a href="https://byui.projectpine.com/wdd230/week03/bom.html">bom2</a></li>
                             <li>Week 04: </li>
                             <li>Week 05: </li>
                             <li>Week 06: </li>
@@ -81,5 +82,11 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script>
+function msg(){
+    // popup is something i wrote, not part of the course
+    popup("This is completely untested. The 'srcset' attribute does not work on Apple 5k retina displays<br><br>All the computers in this house have 5k Apple retina displays.", function(){window.location.href = "https://codepen.io/kaioker/pen/qByVjwP";});
+}
+    </script>
 </body>
 </html>
