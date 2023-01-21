@@ -58,3 +58,9 @@
         border-top: 3px solid #F1520E;
     }
 }
+.sidebar {
+    display: grid; 
+    grid-template-columns: 0.8fr 1.8fr; 
+    grid-template-areas: 
+      "left right"; 
+  }

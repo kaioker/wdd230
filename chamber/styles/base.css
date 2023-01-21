@@ -241,3 +241,19 @@ footer .fbottom span{
     padding:0 5px;
 
 }
+
+.sidebar {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "left"
+      "right"; 
+  }
+.sidebar .left {
+    grid-area: left;
+}
+.sidebar .right {
+    grid-area: right;
+}
