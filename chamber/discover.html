@@ -22,7 +22,7 @@
     <div class="viewport">
         <hr>
         <header>
-            <a href="/">
+            <a href="/wdd230/chamber/index.html">
                 <img class="logo" src="images/logo.png">
             </a>
         </header>
@@ -32,8 +32,8 @@
                     <img src="images/hamburger.png" alt="hamburger menu">
                 </li>
 
-                <li class="menuItem"><a href="#">Home</a></li>
-                <li class="menuItem"><a href="#">Services</a></li>
+                <li class="menuItem"><a href="/wdd230/chamber/index.html">Home</a></li>
+                <li class="menuItem"><a href="/wdd230/chamber/discover.html">Discover</a></li>
                 <li class="menuItem"><a href="#">Events</a></li>
                 <li class="menuItem"><a href="#">Contact</a></li>
 
@@ -46,14 +46,81 @@
         <main>
             <div class="sidebar">
                 <div class="left">
-                    The sidebar content includes statistical information about the city or municipality along with demographics, and events.
-                    Using localStorage, display the amount of time in days (rounded to a whole number) between user visits to this page by the user's agent (browser). Display this information in the sidebar.
+                    <div class="statistics">
+                        <h2>Statistics</h2>
+                        <p>Population: Unknown</p>
+                        <p>Median Age: Unknown</p>
+                        <p>Median Household Income: $0.00</p>
+                        <p>Median Home Value: $0.00</p>
+                    </div>
+                    <div class="events">
+                        <h2>Upcoming Events</h2>
+                        <a href="#">
+                            <p class="event">Event 1</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula in turpis a mollis. Sed vel neque ac libero tempus eleifend ut ut velit. Cras ut leo orci. Vestibulum lobortis commodo quam, eu elementum velit laoreet vel.</p>
+                        </a>
+                        <a href="#">
+                            <p class="event">Event 2</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula in turpis a mollis. Sed vel neque ac libero tempus eleifend ut ut velit. Cras ut leo orci. Vestibulum lobortis commodo quam, eu elementum velit laoreet vel.</p>
+                        </a>
+                        <a href="#">
+                            <p class="event">Event 3</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula in turpis a mollis. Sed vel neque ac libero tempus eleifend ut ut velit. Cras ut leo orci. Vestibulum lobortis commodo quam, eu elementum velit laoreet vel.</p>
+                        </a>
+                        <a href="#">
+                            <p class="event">Event 4</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula in turpis a mollis. Sed vel neque ac libero tempus eleifend ut ut velit. Cras ut leo orci. Vestibulum lobortis commodo quam, eu elementum velit laoreet vel.</p>
+                        </a>
+                        <a href="#">
+                            <p class="event">Event 5</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vehicula in turpis a mollis. Sed vel neque ac libero tempus eleifend ut ut velit. Cras ut leo orci. Vestibulum lobortis commodo quam, eu elementum velit laoreet vel.</p>
+                        </a>
+                    </div>
+                    <p id="time">---</p>
                 </div>
                 <div class="right">
-                    The main area will contain local photos of interest. Each image should be optimized and captioned.
-The images must not load until the user scrolls. Use a lazy loading technique.
-Incorporate a CSS property effect when a user hovers over the images in the gallery. This effect design is your choice. Do not apply this effect to the images in the mobile view.
-Example Image Effects—codepen.io
+                    <div class="gallery">
+                        <div class="galleryImage">
+                            <img src="images/town.webp" alt="gallery image 1"  lazyload="true">
+                            <span class="label">gallery image 1</span>
+                        </div>
+                        <div class="galleryImage">
+                            <img src="images/town.webp" alt="gallery image 2"  lazyload="true">
+                            <span class="label">gallery image 2</span>
+                        </div>
+                        <div class="galleryImage">
+                            <img src="images/town.webp" alt="gallery image 3"  lazyload="true">
+                            <span class="label">gallery image 3</span>
+                        </div>
+                        <div class="galleryImage">
+                            <img src="images/town.webp" alt="gallery image 4"  lazyload="true">
+                            <span class="label">gallery image 4</span>
+                        </div>
+                        <div class="galleryImage">
+                            <img src="images/town.webp" alt="gallery image 5"  lazyload="true">
+                            <span class="label">gallery image 5</span>
+                        </div>
+                        <div class="galleryImage">
+                            <img src="images/town.webp" alt="gallery image 6"  lazyload="true">
+                            <span class="label">gallery image 6</span>
+                        </div>
+                        <div class="galleryImage">
+                            <img src="images/town.webp" alt="gallery image 7"  lazyload="true">
+                            <span class="label">gallery image 7</span>
+                        </div>
+                        <div class="galleryImage">
+                            <img src="images/town.webp" alt="gallery image 8"  lazyload="true">
+                            <span class="label">gallery image 8</span>
+                        </div>
+                        <div class="galleryImage">
+                            <img src="images/town.webp" alt="gallery image 9"  lazyload="true">
+                            <span class="label">gallery image 9</span>
+                        </div>
+                        <div class="galleryImage">
+                            <img src="images/town.webp" alt="gallery image 10" lazyload="true">
+                            <span class="label">gallery image 10</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>

@@ -244,16 +244,64 @@ footer .fbottom span{
 
 .sidebar {
     display: grid; 
-    grid-template-columns: 1fr; 
-    grid-auto-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "left"
-      "right"; 
-  }
+    /*stacked on top of each other*/
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "left"
+        "right";
+}
 .sidebar .left {
     grid-area: left;
 }
+.sidebar .left > * {
+    padding:10px;
+}
 .sidebar .right {
     grid-area: right;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+.galleryImage{
+    position: relative;
+    overflow: hidden;
+}
+.galleryImage img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    transition: transform 0.5s;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+.galleryImage .label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border-radius: 5px 0 5px 0;
+    padding: 5px;
+}
+.events{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+.events a .event{
+    text-decoration: underline;
+}
+.events a :not(.event){
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 0;
+    color:black;
+}
+.events a:hover .event{
+    color: #F1520E;
+    font-size: 1.1em;
 }
