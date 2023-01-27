@@ -79,7 +79,17 @@
                     </div>
                 </section>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d192379.72557060086!2d-4.461864289757358!3d54.23688497519336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1674196651459!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d192379.72557060086!2d-4.461864289757358!3d54.23688497519336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1674196651459!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="" method="post" id="form">
+                <label>Name:  <input required type="text" id="name" name="name" placeholder="Your name"></label>
+                <label>Email:  <input required type="email" id="email" name="email" placeholder="Your email"></label>
+                <label>Rating:  <input type="range" id="range" name="rating" id="range" min="1" max="10" value="10"></label>
+                <label>Username:  <input required type="password" name="username" id="user1" placeholder="username" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,12}"></label>
+                <label>Confirm Username:  <input required type="password" name="username" id="user2" placeholder="confirm username"></label>
+                <input type="submit" value="Submit">
+            </form>
+            <section id="formtable"></section>
+            <br><br><br>
         </main>
     </div>
     <footer class="footer">
@@ -90,6 +100,7 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script>
+
 function msg(){
     // popup is something i wrote, not part of the course
     popup("This is completely untested. The 'srcset' attribute does not work on Apple 5k retina displays<br><br>All the computers in this house have Apple 5k retina displays.", function(){window.location.href = "https://codepen.io/kaioker/pen/qByVjwP";});

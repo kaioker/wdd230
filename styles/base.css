@@ -14,7 +14,6 @@ nav{
 
 .pagegrid {
     display: grid;
-    min-width:555px;
     grid-template-columns: auto; 
     grid-template-rows: min-content;
 }
@@ -208,16 +207,62 @@ ul{
 }
 iframe{
     margin: 1rem auto;
-    border-radius: 5px;
+    border-radius: 20px;
     display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+    box-shadow: 0 4px 8px 10px rgba(0,0,0,0.2);
+    border: 1px solid #ccc;
 }
 
 body.darkmode{ /* screw firefox for not supporting :has() */
     background:rgb(22,61,90);
 }
 
+label{
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+form{
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 5px;
+    display:inline-block;
+    background:rgb(22,61,90);
+    color:white;
+}
+input:not([type=range]){
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+}
+#formtable{
+    display:none;
+}
+table {
+    border-collapse: collapse;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
 
+table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
 
+table th {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: rgba(128,128,128,0.5)
+}
+
+table tr:nth-child(even) {
+    background: rgba(128,128,128,0.2)
+}
 
 
 
@@ -277,15 +322,3 @@ body.darkmode{ /* screw firefox for not supporting :has() */
     65%  {transform: scale(1,1) translateY(-1px)}
     100% {transform: scale(1,1)}
 }
-
-/* 
-
-how i usually handle dark mode:
-
-@media only screen and (prefers-color-scheme: dark){
-    .main{
-        background: #000;
-        color: #fff;
-    }
-} 
-*/
