@@ -305,3 +305,92 @@ footer .fbottom span{
     color: #F1520E;
     font-size: 1.1em;
 }
+
+input{
+    border: 1px solid #bebfc1;
+    padding: 10px 30px;
+    margin: 10px;
+    display: block;
+    font-size: 1em;
+    border-radius: 5px;
+    display: block;
+    color: black;
+    width: calc(100% - 20px);
+}
+
+input[type=submit]{
+    border: 2px solid #00bfff;
+    display: inline-block;
+    background-color: #00bfff;
+    color: #fff;
+    transition: background-color ease-in-out 0.2s;
+}
+
+input[type=submit]:hover{
+    background-color: #33ccff;
+    color: #fff;
+}
+
+input[type=radio]{
+    border: 1px solid #bebfc1;
+    display: inline-block;
+    margin: 10px 0;
+    width: 20px;
+}
+
+label{
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    color: black;
+}
+
+textarea{
+    border: 1px solid #bebfc1;
+    padding: 10px 30px;
+    margin: 10px;
+    height: 296px;
+    width: calc(100% - 20px);
+    display: block;
+    font-size: 1em;
+    border-radius: 5px;
+    display: block;
+    color: black;
+    resize: none;
+}
+
+fieldset{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.hiddenForm{
+    display: none;
+}
+
+.hiddenForm .title{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+.buttonframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label{
+    padding-left:20px;
+    margin-top: 3px;
+    font-style: italic;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+.thanks-container{
+    height: 50vh;
+    padding:20px;
+    padding-top: 10vh;
+    text-align: center;
+}

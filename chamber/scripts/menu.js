@@ -10,3 +10,8 @@ if(document.getElementById("time")){
     var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
     document.getElementById("time").innerHTML = "You last visited this page " + diffDays + " day" + (diffDays == 1 ? "" : "s") + " ago.";
 }
+if(document.getElementById("datetime")){
+    var d = new Date();
+    var n = d.toISOString();
+    document.getElementById("datetime").value = n;
+}
