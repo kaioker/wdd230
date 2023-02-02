@@ -1,0 +1,19 @@
+{
+    "family_name": "Smith",
+    "date_moved_in": "2023-01-01",
+    "visited_by_bishop": true,
+    "number_of_records": 2,
+    "family_members": [
+        {
+            "name": "John",
+            "gender": "male",
+            "birth_date": "1990-01-01"
+        },
+        {
+            "name": "Jane",
+            "gender": "female",
+            "birth_date": "1992-01-01"
+        }
+    ],
+    "note": "the 'number_of_records' entry is redundant because we could just count the array 'family_members' to get the same result."
+}
