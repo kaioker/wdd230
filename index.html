@@ -54,14 +54,7 @@
                 <section class="card long">
                     <h3>Learning Activities</h3>
                     <div class="boxcontent">
-                        <ul>
-                            <li>Week 01: <a href="week01/holygrail.html">Grail</a> | <a href="week01/media-query.html">Media Query</a></li>
-                            <li>Week 02: <a href="week02/bom.html">Grail</a> | <a href="week02/design.html">Media Query</a></li>
-                            <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">lazy load</a> | <a href="javascript:msg()">codepen</a> | <a href="https://byui.projectpine.com/wdd230/week03/bom.html">bom2</a></li>
-                            <li>Week 04: <a href="https://codepen.io/kaioker/pen/abjGyzo">codepen</a> | <a href="week04/images/Screen%20Shot%202023-01-25%20at%206.23.37%20PM.png">combinator</a> | <a href="week04/tablebuild.html">tables</a> | <a href="week04/form-start/index.html">forms</a></li>
-                            <li>Week 05: <a href="https://codepen.io/kaioker/pen/YzjRBBW">codepen</a> | <a href="week05/new-ward-members.json">JSON</a> | <a href="week05/prophets.html">fetch</a></li>
-                            <li>Week 06: </li>
-                        </ul>
+                        <ul id="activities"></ul>
                     </div>
                 </section>
                 <section class="card">
@@ -74,7 +67,9 @@
                 <section class="card">
                     <h3>Information</h3>
                     <div class="boxcontent">
-                        <p id="weather">--</p>
+                        <img src id="icon">
+                        <p id="temp">--</p>
+                        <p id="condition">--</p>
                         <p id="views">--</p>
                     </div>
                 </section>
@@ -101,11 +96,9 @@
     <script src="scripts/darkmode.js"></script>
     <script>
 
-const url = 'https://api.openweathermap.org/data/2.5/';
-
+//ignore this function, it's just for the codepen link in week 3
 
 function msg(){
-    // popup is something i wrote, not part of the course
     popup("This is completely untested. The 'srcset' attribute does not work on Apple 5k retina displays<br><br>All the computers in this house have Apple 5k retina displays.", function(){window.location.href = "https://codepen.io/kaioker/pen/qByVjwP";});
 }
     </script>

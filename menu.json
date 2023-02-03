@@ -1,0 +1,26 @@
+{
+    "week1": {
+        "grail": "week01/holygrail.html",
+        "media": "week01/media-query.html"
+    },
+    "week2": {
+        "grail": "week02/bom.html",
+        "media": "week02/design.html"
+    },
+    "week3": {
+        "webp": "week03/images/landscape.webp",
+        "lazy": "week03/lazyload.html",
+        "codepen": "javascript:msg()",
+        "bom": "https://byui.projectpine.com/wdd230/week03/bom.html"
+    },
+    "week4": {
+        "combinator": "week04/images/Screen%20Shot%202023-01-25%20at%206.23.37%20PM.png",
+        "tables": "week04/tablebuild.html",
+        "forms": "week04/form-start/index.html"
+    },
+    "week5": {
+        "json": "week05/new-ward-members.json",
+        "fetch": "week05/prophets.html",
+        "weather": "week05/weather.html"
+    }
+}
