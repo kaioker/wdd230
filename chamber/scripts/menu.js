@@ -6,7 +6,7 @@ if(document.getElementById("time")){
     var thisVisit = new Date().getTime();
     localStorage.setItem("lastVisit", thisVisit);
     var timeDiff = Math.abs(thisVisit - lastVisit);
-    console.log(timeDiff);
+    //console.log(timeDiff);
     var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
     document.getElementById("time").innerHTML = "You last visited this page " + diffDays + " day" + (diffDays == 1 ? "" : "s") + " ago.";
 }

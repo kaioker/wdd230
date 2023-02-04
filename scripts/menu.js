@@ -122,14 +122,13 @@ async function apiFetch() {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        //console.log(error);
     }
 }
 
 apiFetch();
 
 function doAThing(jsObject) {
-    console.log(jsObject);
     document.getElementById('icon').src = "https://openweathermap.org/img/w/"+jsObject.weather[0].icon+".png";
     document.getElementById('temp').textContent = "Feels Like: "+jsObject.main.feels_like+ "°C";
     document.getElementById('condition').textContent = jsObject.weather[0].description;
