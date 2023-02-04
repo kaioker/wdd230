@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Ficticious Company 1",
+        "address": "123 Main Street",
+        "phone": "555-555-0001",
+        "website": "http://www.ficticiouscompany1.example.com",
+        "icon": "/wdd230/chamber/images/town.webp",
+        "membership": "Gold",
+        "description": "A ficticious company that does ficticious things."
+    },
+    {
+        "name": "Ficticious Company 2",
+        "address": "777 Fake Street",
+        "phone": "555-555-0002",
+        "website": "http://www.ficticiouscompany2.example.com",
+        "icon": "/wdd230/chamber/images/town.webp",
+        "membership": "Silver",
+        "description": "A ficticious company that does ficticious things but different than Ficticious Company 1."
+    },
+    {
+        "name": "Ficticious Company 3",
+        "address": "8734 Ficticious Street",
+        "phone": "555-555-0003",
+        "website": "http://www.ficticiouscompany3.example.com",
+        "icon": "/wdd230/chamber/images/town.webp",
+        "membership": "Gold",
+        "description": "Ficticious Company 3 does ficticious things."
+    },
+    {
+        "name": "Ficticious Company 4",
+        "address": "887 notreal Court",
+        "phone": "555-555-0004",
+        "website": "http://www.ficticiouscompany4.example.com",
+        "icon": "/wdd230/chamber/images/town.webp",
+        "membership": "NP",
+        "description": "a ficticious company that does ficticious things but in the same way as Ficticious Company 3."
+    },
+    {
+        "name": "Ficticious Company 5",
+        "address": "unit 8 fakery place",
+        "phone": "555-555-0005",
+        "website": "http://www.ficticiouscompany5.example.com",
+        "icon": "/wdd230/chamber/images/town.webp",
+        "membership": "Bronze",
+        "description": "Ficticious management of ficticious activities."
+    },
+    {
+        "name": "Ficticious Company 6",
+        "address": "666 idonotexist crescent",
+        "phone": "555-555-0006",
+        "website": "http://www.ficticiouscompany6.example.com",
+        "icon": "/wdd230/chamber/images/town.webp",
+        "membership": "Silver",
+        "description": "a different kind of ficticious work."
+    },
+    {
+        "name": "Ficticious Company 7",
+        "address": "729 notareal place",
+        "phone": "555-555-0007",
+        "website": "http://www.ficticiouscompany7.example.com",
+        "icon": "/wdd230/chamber/images/town.webp",
+        "membership": "Gold",
+        "description": "a ficiticious company that owns ficticious companies."
+    }
+]

@@ -35,7 +35,7 @@
 
                 <li class="menuItem"><a href="/wdd230/chamber/index.html">Home</a></li>
                 <li class="menuItem"><a href="/wdd230/chamber/discover.html">Discover</a></li>
-                <li class="menuItem"><a href="#">Events</a></li>
+                <li class="menuItem"><a href="/wdd230/chamber/directory.html">Members</a></li>
                 <li class="menuItem"><a href="/wdd230/chamber/join.html">Join</a></li>
 
                 <li class="button">
@@ -47,6 +47,7 @@
         <main>
             <h1>Join the Chamber</h1>
             <form method="post" action="thankyou.php">
+                <!-- action had to be a php file because the form was not working due to NginX not being able to handle the form data. -->
                 <div class="blocks">
                     <fieldset>
                         <legend>Applicant Information</legend>
