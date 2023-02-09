@@ -110,7 +110,7 @@ function displayActivities(activities){
     }
 }
 
-const url = 'https://byui.projectpine.com/wdd230/api_proxy.php?q=London,GB&units=metric';
+const url = 'https://byui.projectpine.com/api_proxy.php?q=London,GB&units=metric';
 
 async function apiFetch() {
     try {

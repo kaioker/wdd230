@@ -5,7 +5,7 @@ const captionDesc = document.querySelector('figcaption');
 // i wrapped the api in a php proxy to add some basic security and hide my api key.
 // forgive me for not using the api key in the url like the instructions said but i felt like this was a better way to do it.
 // even if it is beyond the scope of this class.
-const url = 'https://byui.projectpine.com/wdd230/api_proxy.php?q=trier,de&units=imperial';
+const url = 'https://byui.projectpine.com/api_proxy.php?q=trier,de&units=imperial';
 
 async function apiFetch() {
     try {
