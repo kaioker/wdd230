@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce</title>
+    <title>The Chamber of Commerce webpage for [City Name Here]</title>
     <meta name="description" content="Blake's WDD 230 chamber of commerce project for BYUI">
     <meta name="author" content="Blake (kaioker)">
     <meta name="theme-color" content="rgb(22,61,90)">
@@ -38,15 +38,11 @@
                 <li class="menuItem"><a href="/wdd230/chamber/directory.html">Members</a></li>
                 <li class="menuItem"><a href="/wdd230/chamber/join.html">Join</a></li>
 
-                <li class="button">
-                    <a href="#">Log In</a>
-                </li>
-
             </ul>
         </nav>
         <main>
             <div class="banner">
-                <a href="#" class="button">Join Us Today</a>
+                <a href="/wdd230/chamber/join.html" class="button nohover">Join Us Today</a>
             </div>
             <div class="textContent">
                 <h1>Chamber of Commerce</h1>
@@ -96,9 +92,27 @@
                 <div class="card">
                     <div class="cardContent">
                         <h2>Current Weather</h2>
-                        <p>--</p>
-                        <p>--</p>
-                        <p>--</p>
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="icon" id="weather-icon" class="weatherIcon inline">
+                        <p id="current-temp" class="inline">Loading...</p>
+                        <p id="caption-desc" class="inline">Loading...</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardContent">
+                        <h2>Next 3 days</h2>
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="icon" id="weather-icon1" class="weatherIcon inline">
+                        <p id="current-temp1" class="inline">Loading...</p>
+                        <p id="caption-desc1" class="inline">Loading...</p>
+                    </div>
+                    <div class="cardContent">
+                        <img src="" alt="icon" id="weather-icon2" class="weatherIcon inline">
+                        <p id="current-temp2" class="inline">Loading...</p>
+                        <p id="caption-desc2" class="inline">Loading...</p>
+                    </div>
+                    <div class="cardContent">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="icon" id="weather-icon3" class="weatherIcon inline">
+                        <p id="current-temp3" class="inline">Loading...</p>
+                        <p id="caption-desc3" class="inline">Loading...</p>
                     </div>
                 </div>
             </div>
@@ -106,29 +120,29 @@
                 <h2>Spotlights</h2>
                 <div class="card">
                     <picture>
-                        <img src="images/hero.png" alt="">
+                        <img src="images/hero.png" alt="" id="p1">
                     </picture>
                     <div class="cardContent">
-                        <h2>Spotlight 1</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique tempus eros, ut pharetra sem pulvinar nec. Maecenas volutpat tempor nulla eget finibus. In sit amet congue eros. </p>
+                        <h2 id="t1">Spotlight 1</h2>
+                        <p id="d1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique tempus eros, ut pharetra sem pulvinar nec. Maecenas volutpat tempor nulla eget finibus. In sit amet congue eros. </p>
                     </div>
                 </div>
                 <div class="card">
                     <picture>
-                        <img src="images/hero.png" alt="">
+                        <img src="images/hero.png" alt="" id="p2">
                     </picture>
                     <div class="cardContent">
-                        <h2>Spotlight 2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique tempus eros, ut pharetra sem pulvinar nec. Maecenas volutpat tempor nulla eget finibus. In sit amet congue eros. </p>
+                        <h2 id="t2">Spotlight 2</h2>
+                        <p id="d2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique tempus eros, ut pharetra sem pulvinar nec. Maecenas volutpat tempor nulla eget finibus. In sit amet congue eros. </p>
                     </div>
                 </div>
                 <div class="card">
                     <picture>
-                        <img src="images/hero.png" alt="">
+                        <img src="images/hero.png" alt="" id="p3">
                     </picture>
                     <div class="cardContent">
-                        <h2>Spotlight 3</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique tempus eros, ut pharetra sem pulvinar nec. Maecenas volutpat tempor nulla eget finibus. In sit amet congue eros. </p>
+                        <h2 id="t3">Spotlight 3</h2>
+                        <p id="d3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tristique tempus eros, ut pharetra sem pulvinar nec. Maecenas volutpat tempor nulla eget finibus. In sit amet congue eros. </p>
                     </div>
                 </div>
             </div>
@@ -150,7 +164,7 @@
                 <span>© 2023</span>
                 <span>Blake</span>
                 <span>WDD 230</span>
-                <span>Date Modified</span>
+                <span id="moddate">Date Modified</span>
             </div>
         </footer>
     </div>

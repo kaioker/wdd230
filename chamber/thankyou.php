@@ -39,10 +39,6 @@
                 <li class="menuItem"><a href="/wdd230/chamber/directory.html">Members</a></li>
                 <li class="menuItem"><a href="/wdd230/chamber/join.html">Join</a></li>
 
-                <li class="button">
-                    <a href="#">Log In</a>
-                </li>
-
             </ul>
         </nav>
         <main>
@@ -68,7 +64,7 @@
                 <span>© 2023</span>
                 <span>Blake</span>
                 <span>WDD 230</span>
-                <span>Date Modified</span>
+                <span id="moddate">Date Modified</span>
             </div>
         </footer>
     </div>
